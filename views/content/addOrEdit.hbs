@@ -1,0 +1,31 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/content" method="POST" autocomplete="off">
+   <input type="hidden" name="_id" value="{{content._id}}" />
+   <div class="form-group">
+      <label>Key</label>
+      <input type="text" class="form-control" name="key" placeholder="key" value="{{content.key}}" />
+      <div class="text-danger">
+         {{content.keyError}}</div>
+   </div>
+   <div class="form-group">
+      <label>En</label>
+      <input type="text" class="form-control" name="en" placeholder="en" value="{{content.en}}" />
+
+   </div>
+   <div class="form-group">
+      <label>Ka</label>
+      <input type="text" class="form-control" name="ka" placeholder="ka" value="{{content.ka}}" />
+
+   </div>
+   <div class="form-group">
+      <label>ru</label>
+      <input type="text" class="form-control" name="ru" placeholder="ru" value="{{content.ru}}" />
+
+   </div>
+
+   <div class="form-group">
+      <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+      <a class="btn btn-secondary" href="/content/list"><i class="fa fa-list-alt"></i> View All</a>
+   </div>
+</form>
