@@ -22,6 +22,6 @@ app.set("view engine", "hbs");
 app.listen(3000, () => {
    console.log("Express server started at port : 3000");
 });
-
+console.log("update");
 app.use("/employee", employeeController);
 app.use("/content", contentController);
